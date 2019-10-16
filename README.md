@@ -32,7 +32,7 @@ Even we are using a Maven multi structure, the Mavan child modules do not refer 
 [gwt-timer](https://github.com/FrankHossfeld/gwt-timer) is already migrated and uses the example structure. You can copy the files and structure from this Repo and use it as a base to start.
 
 ## Branching
-During development and before the module is deployed to Maven Central we will work with one brach (**master**).
+During development and before the module is deployed to Maven Central, we will work with one brach (**master**).
 
 Once we have deployed the module to Maven Central, we will use two branches in the module repos:
 1. a **master** branche. This branch will contain the last deployed version and will only updated in case of a new deploy.
