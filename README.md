@@ -1,13 +1,13 @@
 # GWT Module Migration
 To prepare GWT for J2CL the GWT modules need to separated from GWT.
-There fore we need to create projects for each module. 
+There fore we need to create separate artifacts for each module. These artifacts will be located in separate repos. 
 
 ## Module Requirements
 We made several decisions how to set up and implement the modules:
 
 1. every module will have it's own repository
 2. use Maven as build tool
-3. structure the Maven project in this way:
+3. structure the Maven project like this:
     * parent module
         * one Maven child module for the module itself (name: **gwt-[module name]**)
         * one Maven child module for GWT2-tests (name: **gwt2-tests**)
@@ -25,7 +25,7 @@ We made several decisions how to set up and implement the modules:
 
 **Important Note** 
 
-Even we are using a Maven multi structure, the Mavan child modules do not refer the parent pom!
+Even we are using a Maven multi module structure, the Mavan child modules do not refer the parent pom!
 
 
 ## Example
