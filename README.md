@@ -25,18 +25,18 @@ We made several decisions how to set up and implement the modules:
 
 **Important Note** 
 
-Even we are using a Maven multi module structure, the Mavan child modules do not refer the parent pom!
+Even we are using a Maven multi module structure, the Maven child modules do not refer the parent pom!
 
 
 ## Example
 [gwt-timer](https://github.com/FrankHossfeld/gwt-timer) is already migrated and uses the example structure. You can copy the files and structure from this Repo and use it as a base to start.
 
 ## Branching
-During development and before the module is deployed to Maven Central, we will work with one brach (**master**).
+During development and before the module is deployed to Maven Central, we will work with one branch (**master**).
 
 Once we have deployed the module to Maven Central, we will use two branches in the module repos:
-1. a **master** branche. This branch will contain the last deployed version and will only updated in case of a new deploy.
-2. a **development** branche. We will use this branche for active development 
+1. a **master** branch. This branch will contain the last deployed version and will only updated in case of a new deploy.
+2. a **development** branch. We will use this branch for active development 
 
 ## Formatting
 We will use the [fmt-maven-plugin](https://github.com/coveooss/fmt-maven-plugin) to format the code.
